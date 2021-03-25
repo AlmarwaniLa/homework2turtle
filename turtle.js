@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset=utf-8 />
-<title>turtle </title>
-
-<style>
-    article, aside, figure, footer, header, hgroup, 
-    menu, nav, section { display: block; }
-    canvas {border: 20px dotted #940404;}
-  </style>
-</head>
-<body>
-
-<h1> Homework 2 </h1>
-
-<canvas id="myDrawing" width="100" height="150"></canvas>
-<script><canvas> </canvas>
 
     float turtleX;
     float turtleY;
@@ -107,10 +89,7 @@
     void rotateTurtle(float degrees) {
       turtleHeading += degrees;
     }
-    </script>
-    <canvas> </canvas>
-</script>
-<script>
+ 
   float turtleX;
   float turtleY;
   float turtleHeading = 0;
@@ -201,9 +180,3 @@
   void rotateTurtle(float degrees) {
     turtleHeading += degrees;
   }
-  </script>
-  <canvas> </canvas>
-</script>
-<canvas> </canvas><canvas> </canvas>
-<canvas> </canvas>
-<canvas> </canvas><canvas> </canvas><canvas> </canvas>
