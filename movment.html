@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>turtle </title>
+
+<style>
+    article, aside, figure, footer, header, hgroup, 
+    menu, nav, section { display: block; }
+    canvas {border: 20px dotted #940404;}
+  </style>
+</head>
+<body>
+
+<h1> Homework 2 </h1>
+
+<canvas id="myDrawing" width="600" height="300"></canvas>
+<script>
+    float turtleX;
+    float turtleY;
+    float turtleHeading = 0;
+    
+    void setup() {
+      size(300, 300);
+      turtleX = width/2;
+      turtleY = height/2;
+      background(64);
+    }
+    
+    void draw() {
+    
+      stroke(random(256), random(256), random(256));
+      
+      rotateTurtle(random(360));
+      float length = random(0, 150);
+      
+      forward(length);
+      rotateTurtle(90);
+      
+      forward(length);
+      rotateTurtle(90);
+      
+      forward(length);
+      rotateTurtle(90);
+      
+      forward(length);
+    }
+    
+    void forward(float amount) {
+      
+      float newX = turtleX + cos(radians(turtleHeading)) * amount;
+      float newY = turtleY + sin(radians(turtleHeading)) * amount;
+    
+      line(turtleX, turtleY, newX, newY);
+      fill(0);
+      
+      turtleX = newX;
+      turtleY = newY;
+    }
+    
+    void rotateTurtle(float degrees) {
+      turtleHeading += degrees;
+    }
+    float turtleX;
+    float turtleY;
+    float turtleHeading = 0;
+    
+    void setup() {
+      size(100, 00);
+      turtleX = width/2;
+      turtleY = height/2;
+      background(64);
+    }
+    
+    void draw() {
+    
+      stroke(random(256), random(256), random(256));
+      
+      rotateTurtle(random(360));
+      float length = random(0, 150);
+      
+      forward(length);
+      rotateTurtle(50);
+      
+      forward(length);
+      rotateTurtle(50);
+      
+      forward(length);
+      rotateTurtle(50);
+      
+      forward(length);
+    }
+    
+    void forward(float amount) {
+      
+      float newX = turtleX + cos(radians(turtleHeading)) * amount;
+      float newY = turtleY + sin(radians(turtleHeading)) * amount;
+    
+      line(turtleX, turtleY, newX, newY);
+      fill(0);
+      
+      turtleX = newX;
+      turtleY = newY;
+    }
+    
+    void rotateTurtle(float degrees) {
+      turtleHeading += degrees;
+    }
+    </script>
+    <canvas> </canvas>
+</script>
+    
